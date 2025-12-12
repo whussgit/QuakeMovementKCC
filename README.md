@@ -15,6 +15,5 @@ A **Quake-style movement controller** for Unity, built using the **KinematicChar
 4. **Change input** in the `Player` and `PlayerCamera` scripts according to your project setup  
 5. **Create two gameobjects** in your scene: `Player` and `PlayerCamera` 
 6. **Create another two gameobjects:**  
-Player -> CameraTarget
-PlayerCamera -> Camera(with MainCamera tag)
+Player -> CameraTarget and PlayerCamera -> Camera(with MainCamera tag)
 7. **Attach scripts** to the Player and PlayerCamera objects and configure the KCC settings as desired
