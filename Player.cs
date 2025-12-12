@@ -9,7 +9,7 @@ public class Player : MonoBehaviour, ICharacterController
     [Header("Movement")]
     [SerializeField] Camera mainCamera;
     [SerializeField] float gravity = 40f;
-	[SerializeField] float gravityMultiplier = 1.25f;
+	[SerializeField] float gravityMultiplier = 1.025f;
 	[SerializeField] float groundAccel  = 130f;
 	[SerializeField] float airAccel = 50f;
 	[SerializeField] float airSpeed = 1f;
@@ -171,3 +171,4 @@ public class Player : MonoBehaviour, ICharacterController
 
 
 }
+
