@@ -10,9 +10,9 @@ A **Quake-style movement controller** for Unity, built using the **KinematicChar
 ## Installation
 
 1. **Install Unity** make sure you have a compatible unity version
-2. **Install KinematicCharacterController (KCC)** from the asset Store  
+2. **Install KinematicCharacterController** from the asset Store  
 3. **Copy the files** from this repository into your Unity project
-4. **Change input** in the `Player` and `PlayerCamera` scripts according to your project setup  
+4. **Change input** in the `Player` and `PlayerCamera` scripts according to your project settings
 5. **Create two gameobjects** in your scene: `Player` and `PlayerCamera` 
 6. **Create another two gameobjects:**  
 Player --> CameraTarget and PlayerCamera --> Camera(with MainCamera tag)
