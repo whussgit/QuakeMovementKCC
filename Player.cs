@@ -78,6 +78,7 @@ public class Player : MonoBehaviour, ICharacterController
 			{
 				currentVelocity = _motor.GetDirectionTangentToSurface(currentVelocity, _motor.GroundingStatus.GroundNormal) * currentVelocity.magnitude;
 			}
+			
 			Vector3 reorientedInput = _motor.GetDirectionTangentToSurface(inputDir, _motor.GroundingStatus.GroundNormal);
 			Vector2 target = new Vector2(reorientedInput.x, reorientedInput.z);
 			Vector2 horivel = new Vector2(currentVelocity.x, currentVelocity.z);
@@ -168,8 +169,4 @@ public class Player : MonoBehaviour, ICharacterController
     public void OnGroundHit(Collider hitCollider, Vector3 hitNormal, Vector3 hitPoint, ref HitStabilityReport hitStabilityReport){}
     public void OnMovementHit(Collider hitCollider, Vector3 hitNormal, Vector3 hitPoint, ref HitStabilityReport hitStabilityReport){}
     public void ProcessHitStabilityReport(Collider hitCollider, Vector3 hitNormal, Vector3 hitPoint, Vector3 atCharacterPosition, Quaternion atCharacterRotation, ref HitStabilityReport hitStabilityReport){}
-
-
 }
-
-
