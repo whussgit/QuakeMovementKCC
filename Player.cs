@@ -72,7 +72,7 @@ public class Player : MonoBehaviour, ICharacterController
 		
 		if (_motor.GroundingStatus.IsStableOnGround)
 		{
-			bool hasSupportBelow = _motor.GroundingStatus.IsStableOnGround && _motor.GroundingStatus.GroundNormal != Vector3.zero; //Safe
+			bool hasSupportBelow = _motor.GroundingStatus.GroundNormal != Vector3.zero;
 
 			if (hasSupportBelow)
 			{
@@ -171,4 +171,5 @@ public class Player : MonoBehaviour, ICharacterController
 
 
 }
+
 
